@@ -32,7 +32,8 @@ body {
   margin-top: 3rem; }
   @media (min-width: 810px) {
     .container {
-      max-width: 60rem; } }
+      max-width: 60rem;
+      margin-top: 6rem; } }
   @media (min-width: 1140px) {
     .container {
       width: 90%;
@@ -64,14 +65,22 @@ body {
     margin-bottom: 3rem; }
   .huddle__heading {
     font-family: "Poppins", sans-serif;
-    font-size: clamp(2.4rem, 3vw, 4rem); }
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    max-width: 45rem;
+    margin: 0 auto; }
+    @media (min-width: 1140px) {
+      .huddle__heading {
+        max-width: unset;
+        margin: 0; } }
   .huddle__description {
     font-size: clamp(1.6rem, 2vw, 1.85rem);
+    max-width: 50rem;
     line-height: 2.7rem;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem auto 2rem auto;
     opacity: 0.7; }
     @media (min-width: 1140px) {
       .huddle__description {
+        max-width: unset;
         margin: 2rem 0 2.5rem 0; } }
   .huddle__button:link, .huddle__button:visited {
     color: #674baf;
