@@ -1,17 +1,147 @@
+.huddle {
+  text-align: center;
+
+  @media (min-width: 1140px) {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.9rem;
+  }
+
+  &__logo {
+    width: clamp(13rem, 15vw, 58rem);
+
+    @media (min-width: 1140px) {
+      margin-top: 4rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin: 5.7rem 0;
+
+    @media (min-width: 1140px) {
+      width: unset;
+      margin: 8rem 0 0 0;
+    }
+  }
+
+  &__content-wrapper {
+    margin-bottom: 3rem;
+  }
+
+  &__heading {
+    font-family: $font-primary;
+    font-size: clamp(2.4rem, 3vw, 4rem);
+  }
+
+  &__description {
+    font-size: clamp(1.6rem, 2vw, 1.85rem);
+    line-height: 2.7rem;
+    margin: 1rem 0 2rem 0;
+    opacity: 0.7;
+
+    @media (min-width: 1140px) {
+      margin: 2rem 0 2.5rem 0;
+    }
+  }
+
+  &__button:link,
+  &__button:visited {
+    color: $color-primary;
+    text-decoration: none;
+    background-color: $color-white;
+    font-size: clamp(1.2rem, 1.2vw, 3rem);
+    border-radius: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+    padding: 1.3rem 8rem;
+    display: inline-block;
+    transition: all 0.2s;
+
+    @media (min-width: 1140px) {
+      padding: 1.5rem 6.5rem;
+    }
+  }
+
+  &__button:hover,
+  &__button:focus,
+  &__button:active {
+    background-color: $color-secondary;
+  }
+
+  &__list {
+    list-style: none;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-self: flex-end;
+
+    @media (min-width: 1140px) {
+      gap: 1.5rem;
+    }
+
+    &-item {
+      border: 1px solid $color-white;
+      border-radius: 50%;
+      transition: all 0.2s;
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid $color-secondary;
+
+        .huddle__list-icon {
+          fill: $color-secondary;
+        }
+      }
+    }
+
+    &-link {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: $color-white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (min-width: 1140px) {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+
+    &-icon {
+      width: 1.2rem;
+      transition: all 0.2s;
+
+      @media (min-width: 1140px) {
+        width: 1.8rem;
+      }
+    }
+  }
+}
+
 .attribution {
   font-size: 1rem;
   text-align: center;
   margin: 1rem 0;
 
+  @media (min-width: 1140px) {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
   &__link:link,
   &__link:visited {
     text-transform: uppercase;
-    // color: $color-primary;
+    color: $color-secondary;
     transition: all 0.2s;
   }
 
   &__link:hover,
   &__link:active {
-    // color: $color-secondary;
+    color: $color-white;
   }
 }

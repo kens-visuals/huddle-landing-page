@@ -1,0 +1,15 @@
+.container {
+  width: 80%;
+  max-width: 40rem;
+  margin-top: 3rem;
+
+  @media (min-width: 810px) {
+    max-width: 60rem;
+  }
+
+  @media (min-width: 1140px) {
+    width: 90%;
+    max-width: 510rem;
+    margin-top: 2rem;
+  }
+}

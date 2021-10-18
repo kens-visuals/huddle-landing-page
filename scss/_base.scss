@@ -1,5 +1,6 @@
 $color-primary: hsl(257, 40%, 49%);
 $color-secondary: hsl(300, 69%, 71%);
+$color-white: hsl(0, 0%, 100%);
 
 $font-primary: 'Poppins', sans-serif;
 $font-secondary: 'Open Sans', sans-serif;
@@ -10,6 +11,7 @@ $font-secondary: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: $font-secondary;
 }
 
 html {
@@ -19,6 +21,18 @@ html {
 
 body {
   min-height: 100vh;
+  color: $color-white;
+  background-color: $color-primary;
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   font-size: 1.6rem;
-  font-family: $font-secondary;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+
+  @media (min-width: 1140px) {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: 90% 100%;
+  }
 }
