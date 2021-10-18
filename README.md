@@ -48,7 +48,7 @@ The last project of the newbie category, I'm really excited that I finished this
 
 ### Useful resources
 
-- [CSS box-shadows](https://getcssscan.com/css-box-shadow-examples) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [CSS box-shadows](https://getcssscan.com/css-box-shadow-examples) - Simple and cool CSS box-shadow collection.
 
 ## Author
 
